@@ -1,10 +1,9 @@
 #include "atm.h"
-#define MAX_AMOUNT 31999
 
 unsigned int get_money(unsigned short int amount)
 {
   unsigned int notes = 0x0;
-  if (amount <= MAX_AMOUNT)
+  if (amount <= 31999)
   {
     int denominations[] = {2000, 500, 100, 50, 20, 10, 5, 1};
     unsigned short int balance = amount;
